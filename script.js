@@ -11,8 +11,7 @@ function repondreNon() {
     document.getElementById("message").innerText =
         "Mauvaise réponse 😏 mais on continue quand même…";
 }
-
-document.getElementById("valentineForm1").addEventListener("submit", function(e) {
+document.getElementById("valentineForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const resto = this.resto.value;
@@ -30,5 +29,11 @@ Je t’aime ❤️`;
 
     const encoded = encodeURIComponent(message);
 
+    // Ouvre WhatsApp
     window.open(`https://wa.me/?text=${encoded}`, "_blank");
+
+    // Redirection vers la page de remerciement
+    window.location.href = "merci.html";
 });
+
+
