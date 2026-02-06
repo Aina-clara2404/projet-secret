@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Valentin 💘</title>
+    <link rel="stylesheet" href="valentin.css">
+</head>
+<body>
+
+<div class="card">
+
+    <!-- Question 1 -->
+    <div id="question1">
+        <h1>💖 Mon amour 💖</h1>
+        <p>J’ai une question très sérieuse…</p>
+        <h2>Veux-tu être mon Valentin ? 💌</h2>
+
+        <div class="buttons">
+            <button class="yes" onclick="repondreOui()">Oui 🥰</button>
+            <button class="no" onclick="repondreNon()">Non 😳</button>
+        </div>
+    </div>
+
+    <!-- Réponse + formulaire -->
+    <div id="formulaire" class="hidden">
+        <h2 id="message"></h2>
+
+        <form action="clarazim57@gmail.com" method="POST" enctype="text/plain">
+            <label>
+                🍝 Ton resto préféré :
+                <input type="text" placeholder="Ex : italien, burger, surprise…" required>
+            </label>
+
+            <label>
+                👗 Ta tenue idéale pour ta Valentine :
+                <input type="text" placeholder="Ex : robe, jean, pyjama 😏">
+            </label>
+
+            <label>
+                🎬 Activité parfaite pour la soirée :
+                <select>
+                    <option>Ciné + câlins</option>
+                    <option>Resto romantique</option>
+                    <option>Soirée Netflix</option>
+                    <option>Surprise totale</option>
+                </select>
+            </label>
+
+            <label>
+                💕 Niveau de bisous attendu :
+                <input type="range" min="0" max="100">
+            </label>
+
+            <button type="submit" class="yes">Valider mon destin 💘</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="script"></script>
+</body>
+</html>
+
