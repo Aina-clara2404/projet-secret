@@ -27,13 +27,9 @@ document.getElementById("valentineForm").addEventListener("submit", function(e) 
 
 Je t’aime ❤️`;
 
-    const encoded = encodeURIComponent(message);
-
-    // Ouvre WhatsApp
-    window.open(`https://wa.me/?text=${encoded}`, "_blank");
-
     // Redirection vers la page de remerciement
     window.location.href = "merci.html";
 });
+
 
 
